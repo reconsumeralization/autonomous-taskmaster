@@ -1,0 +1,44 @@
+# Analysis of File I/O Operations in autotype_mcp_server/src/core_logic.py
+
+Based on the task requirements, the following functions perform file system or file I/O operations:
+
+1.  **load_tasks:**
+    - Opens and reads the JSON task file (`open()`, `json.load()`).
+    - Handles `FileNotFoundError`.
+    - Calls `save_tasks` if the file is not found or invalid.
+
+2.  **save_tasks:**
+    - Ensures the directory exists (`os.makedirs(exist_ok=True)`).
+    - Opens and writes the JSON task file (`open()`, `json.dump()`).
+
+3.  **parse_task_header:**
+    - Uses `yaml.safe_load()` on a string derived from file content. (Indirect relation to file I/O).
+
+4.  **mark_task_done:**
+    - Ensures the destination 'done' directory exists (`os.makedirs(exist_ok=True)`).
+    - Moves the task file (`shutil.move()`).
+
+5.  **get_next_task:**
+    - Checks if the tasks directory exists and is a directory (`os.path.exists()`, `os.path.isdir()`).
+    - Lists directory contents (`os.listdir()`).
+    - Checks if an item is a file (`os.path.isfile()`).
+
+6.  **ai_generate_code:**
+    - Checks if the test file exists (`os.path.exists()`).
+    - Opens and reads the test file (`open()`).
+
+7.  **process_code_task:**
+    - Opens and reads the task markdown file (`open()`).
+    - Gets absolute paths, checks directories (`os.path.abspath()`, `os.path.dirname()`, `os.makedirs(exist_ok=True)`).
+    - Checks if implementation and test files exist (`os.path.exists()`).
+    - Creates a placeholder implementation file if it doesn't exist (`open()`).
+    - Calls `mark_task_done()` (which performs file moving).
+    - Handles `FileNotFoundError` for the task file.
+
+**Potential Candidates for Moving to utils.py:**
+
+- `load_tasks`, `save_tasks`: Core JSON file handling.
+- `mark_task_done`: Task file lifecycle management.
+- `get_next_task`: Finding task files.
+
+Functions like `ai_generate_code` and `process_code_task` might still need to *check* for files (`os.path.exists`), but the core *reading/writing/moving* could be delegated to utility functions. 

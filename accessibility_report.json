@@ -1,0 +1,140 @@
+{
+  "alerts.html": [
+    {
+      "type": "tabindex-missing",
+      "msg": "A missing tabindex attribute: <a href=\"/\">Back to Status</a>..."
+    }
+  ],
+  "history.html": [
+    {
+      "type": "tabindex-missing",
+      "msg": "A missing tabindex attribute: <a href=\"/\">Back to Status</a>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "A missing tabindex attribute: <a href=\"/logout\">Logout</a>..."
+    }
+  ],
+  "home.html": [
+    {
+      "type": "duplicate-id",
+      "msg": "Duplicate id 'cmd' found."
+    },
+    {
+      "type": "aria-missing",
+      "msg": "Select missing ARIA label or visible text: <select id=\"cmd\" name=\"cmd\">\n      {% for value, label in commands %}\n        <o..."
+    },
+    {
+      "type": "aria-missing",
+      "msg": "Select missing ARIA label or visible text: <select id=\"cmd\" name=\"cmd\">\n      {% for value, label in commands %}\n        <o..."
+    },
+    {
+      "type": "aria-missing",
+      "msg": "Input missing ARIA label or visible text: <input id=\"interval\" min=\"1\" name=\"interval\" required=\"\" type=\"number\"/>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Select missing tabindex attribute: <select id=\"cmd\" name=\"cmd\">\n      {% for value, label in commands %}\n        <o..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Input missing tabindex attribute: <input aria-label=\"Arguments (space separated)\" id=\"args\" name=\"args\" type=\"text..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Button missing tabindex attribute: <button type=\"submit\">Send</button>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "A missing tabindex attribute: <a href=\"/alerts\">View All Alerts</a>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "A missing tabindex attribute: <a href=\"/logout\">Logout</a>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "A missing tabindex attribute: <a href=\"/users\">User Management</a>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "A missing tabindex attribute: <a href=\"/accessibility-report\" target=\"_blank\">Accessibility Report</a>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "A missing tabindex attribute: <a href=\"/alerts\">View All Alerts</a>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "A missing tabindex attribute: <a href=\"/login\">Login</a>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Select missing tabindex attribute: <select id=\"cmd\" name=\"cmd\">\n      {% for value, label in commands %}\n        <o..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Input missing tabindex attribute: <input id=\"interval\" min=\"1\" name=\"interval\" required=\"\" type=\"number\"/>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Button missing tabindex attribute: <button type=\"submit\">Schedule</button>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Input missing tabindex attribute: <input name=\"job_id\" type=\"hidden\" value=\"{{ job.id }}\"/>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Button missing tabindex attribute: <button type=\"submit\">Remove</button>..."
+    }
+  ],
+  "login.html": [
+    {
+      "type": "tabindex-missing",
+      "msg": "Input missing tabindex attribute: <input aria-label=\"Access Token\" id=\"token\" name=\"token\" required=\"\" type=\"passw..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Button missing tabindex attribute: <button type=\"submit\">Login</button>..."
+    }
+  ],
+  "users.html": [
+    {
+      "type": "aria-missing",
+      "msg": "Input missing ARIA label or visible text: <input id=\"token\" name=\"token\" required=\"\" type=\"text\"/>..."
+    },
+    {
+      "type": "aria-missing",
+      "msg": "Select missing ARIA label or visible text: <select id=\"role\" name=\"role\">\n<option value=\"admin\">admin</option>\n<option valu..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Input missing tabindex attribute: <input name=\"token\" type=\"hidden\" value=\"{{ u.token }}\"/>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Button missing tabindex attribute: <button type=\"submit\">Remove</button>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Input missing tabindex attribute: <input id=\"token\" name=\"token\" required=\"\" type=\"text\"/>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Select missing tabindex attribute: <select id=\"role\" name=\"role\">\n<option value=\"admin\">admin</option>\n<option valu..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "Button missing tabindex attribute: <button type=\"submit\">Add User</button>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "A missing tabindex attribute: <a href=\"/\">Back to Status</a>..."
+    },
+    {
+      "type": "tabindex-missing",
+      "msg": "A missing tabindex attribute: <a href=\"/logout\">Logout</a>..."
+    }
+  ]
+}

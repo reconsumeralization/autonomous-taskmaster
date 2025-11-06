@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "autotyper-taskmaster-mcp": {
+      "type": "sse",
+      "url": "http://127.0.0.1:8000/sse",
+      "env": {}
+    }
+  }
+} 

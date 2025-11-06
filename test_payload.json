@@ -1,0 +1,7 @@
+{
+  "model": "phi:latest",
+  "messages": [
+    {"role": "user", "content": "Say hello as a JSON object."}
+  ],
+  "max_tokens": 100
+} 

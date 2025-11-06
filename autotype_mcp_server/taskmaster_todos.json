@@ -1,0 +1,78 @@
+[
+  {
+    "id": "task_client_01",
+    "task": "Implement Basic Chatbot MCP Client",
+    "status": "Paused",
+    "subtasks": [
+      {"subtask": "Analyze server endpoints", "status": "Completed"},
+      {"subtask": "Create client module structure", "status": "Completed"},
+      {"subtask": "Set up client venv", "status": "Completed"},
+      {"subtask": "Install mcp-sdk from source", "status": "Completed"},
+      {"subtask": "Implement basic SSE connection logic", "status": "Completed"},
+      {"subtask": "Test client connection (troubleshooting)", "status": "Paused - HTTP/Terminal Issues"}
+    ],
+    "notes": "Paused due to persistent connection errors and terminal output issues."
+  },
+  {
+    "id": "task_refactor_01",
+    "task": "Refactor core_logic.py",
+    "status": "Completed",
+    "subtasks": [
+      {"subtask": "Move UI functions to ui_automation.py", "status": "Completed"},
+      {"subtask": "Move AI provider functions to ai_providers.py", "status": "Completed"},
+      {"subtask": "Move utility functions to utils.py", "status": "Completed"},
+      {"subtask": "Add standard docstrings to refactored modules", "status": "Completed"}
+    ],
+    "notes": "Core server logic modularized."
+  },
+  {
+    "id": "task_testing_02",
+    "task": "Add Automated Testing (Server)",
+    "status": "In Progress",
+    "subtasks": [
+      {"subtask": "Setup pytest and directory structure", "status": "Completed"},
+      {"subtask": "Add tests for utils.get_next_task", "status": "Completed"},
+      {"subtask": "Add tests for utils.run_pytest", "status": "Completed"},
+      {"subtask": "Add tests for utils.load_json_file", "status": "Completed"},
+      {"subtask": "Add tests for utils.save_json_file", "status": "Completed"},
+      {"subtask": "Add tests for utils.move_file", "status": "Completed"},
+      {"subtask": "Add tests for utils.setup_logging", "status": "Completed"},
+      {"subtask": "Add tests for utils.speak_and_print", "status": "Pending"},
+      {"subtask": "Add tests for utils.load_yaml_from_string", "status": "Pending"},
+      {"subtask": "Add tests for Project Map functions", "status": "Pending"},
+      {"subtask": "Add tests for ui_automation module", "status": "Pending"},
+      {"subtask": "Add tests for ai_providers module", "status": "Pending"},
+      {"subtask": "Add tests for core_logic module", "status": "Pending"}
+    ],
+    "notes": "Currently testing utility functions."
+  },
+  {
+    "id": "task_gui_build_01",
+    "task": "Build Dashboard GUI",
+    "status": "In Progress",
+    "subtasks": [
+        {"subtask": "task_gui_01: Set up Dashboard project structure", "status": "Completed"},
+        {"subtask": "task_gui_02: Implement basic GUI structure", "status": "Completed"},
+        {"subtask": "task_gui_03: Implement Goals tab", "status": "Completed"},
+        {"subtask": "task_gui_04: Implement Docs tab", "status": "Completed"},
+        {"subtask": "task_gui_05: Implement Tests tab", "status": "Pending"},
+        {"subtask": "task_gui_06: Define and Implement Efforts tab", "status": "Pending"},
+        {"subtask": "task_gui_07: Add refinement features", "status": "In Progress"}
+    ],
+    "notes": "Creating a separate GUI application using PySide6 to visualize project status."
+  },
+  {
+    "id": "task_proj_mgmt_01",
+    "task": "Implement Project Scoping Feature",
+    "status": "Paused",
+    "subtasks": [
+        {"subtask": "task_proj_01: Create the top-level projects/ directory", "status": "Completed"},
+        {"subtask": "task_proj_02: Add CURRENT_PROJECT_NAME setting to config.yaml", "status": "Completed"},
+        {"subtask": "task_proj_03: Modify taskmaster.py to read CURRENT_PROJECT_NAME", "status": "Pending"},
+        {"subtask": "task_proj_04: Adapt utility functions for project context", "status": "Pending"},
+        {"subtask": "task_proj_05: Update Dashboard GUI for project focus", "status": "Pending"},
+        {"subtask": "task_proj_06: Create an example project structure", "status": "Pending"}
+    ],
+    "notes": "Adding the ability to scope operations to specific project directories. Paused due to inability to read/edit taskmaster.py reliably with available tools to implement subtask 3."
+  }
+] 

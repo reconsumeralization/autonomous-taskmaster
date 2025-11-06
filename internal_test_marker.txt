@@ -1,0 +1,13 @@
+--- INTERNAL TEST MARKER: propose_plan_tool ---
+Internal Test Result:
+{
+  "status": "error",
+  "message": "Failed to parse AI planner response as JSON.",
+  "raw_response": "# ERROR: OpenAI endpoint http://localhost:11434/v1/chat/completions failed (404): 404 Client Error: Not Found for url: http://localhost:11434/v1/chat/completions. Status: 404 (If using Ollama, no API key is required.)"
+}
+--- INTERNAL TEST MARKER: take_screenshot_tool ---
+Internal Screenshot Test Result:
+{
+  "status": "success",
+  "file_path": "C:\\Users\\recon\\Desktop\\autotype\\autotype_mcp_server\\screenshots\\screenshot_20250503_072140.png"
+}

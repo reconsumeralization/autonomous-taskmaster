@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pyyaml
+requests
+psutil
+win10toast
+google-generativeai
+pytest
+python-slugify
+# MCP SDK - Install manually from mcp_sdk_source for now
+# -e ../mcp_sdk_source 

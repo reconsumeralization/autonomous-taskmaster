@@ -1,0 +1,175 @@
+# --- Taskmaster Settings ---
+# Path to the JSON file containing a list of task objects
+TODO_PATH: "taskmaster_todos.json"
+# Directory to scan for task definitions in .md files
+TASKS_DIR: "tasks"
+# Directory to move successfully processed .md task files
+DONE_DIR: "tasks_done"
+# Optional: Base directory for resolving relative paths in tasks.
+# If set, test/implementation files are relative to this path unless absolute.
+# Example: "/path/to/your/project"
+PROJECT_ROOT_DIR: ""
+# Run pytest with the '-v' verbose flag
+PYTEST_VERBOSE: false
+
+# --- AI Interaction Settings ---
+# Choose the AI interaction method:
+# 'api': Use direct API calls (e.g., Grok, Gemini, OpenAI). Requires 'requests'. (Preferred)
+# 'ui': Use PyAutoGUI to interact with a chat window. Requires 'pyautogui', 'pyperclip'.
+AI_PROVIDER: "api"
+
+# --- API Provider Settings (Used if AI_PROVIDER='api') ---
+# Example for Grok (using OpenAI-compatible endpoint format)
+# Adapt models, keys, and URL for other providers (Gemini, OpenAI, Claude, etc.)
+
+# Environment variable names for API Key and URL (adjust prefix if needed)
+# Example: For Grok
+GROK_API_KEY_ENV: "XAI_API_KEY"
+GROK_API_URL_ENV: "XAI_API_URL"
+# Example: For Gemini (Used for planning and optionally code-gen)
+GEMINI_API_KEY_ENV: "GEMINI_API_KEY" # Ensure this is set if using Gemini
+
+# *** NEW: Ordered list of models to try for code generation ***
+# The script will try these models in order. The first is the most preferred.
+# Use model names appropriate for your chosen provider (check their documentation).
+# Example using Ollama with standard Phi model:
+AI_MODEL_FALLBACK_LIST:
+  - "phi"
+  # - "phi3:mini-4k-instruct-q4_K_M" # Not available
+  # - "qwen3:4b-instruct-q4_K_M" # Optional alternative
+# Example using Gemini models (ensure GEMINI_API_KEY is set):
+# AI_MODEL_FALLBACK_LIST:
+#  - "gemini-1.5-pro-latest"
+#  - "gemini-1.5-flash-latest"
+
+# *** NEW: Cooldown period in seconds ***
+# How long to wait before retrying a model after it hits a rate limit error (e.g., 429 status code).
+MODEL_COOLDOWN_SECONDS: 300 # 5 minutes
+
+# Maximum number of tokens to request in the AI response. Should be suitable for all models in the list.
+AI_MAX_TOKENS: 8192
+# Sampling temperature. Lower is more deterministic.
+AI_TEMPERATURE: 0.1
+# Timeout in seconds for waiting for *each* API response attempt.
+AI_TIMEOUT: 180
+
+# Example curl for Gemini API:
+# curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=GEMINI_API_KEY" \
+# -H 'Content-Type: application/json' \
+# -X POST \
+# -d '{
+#   "contents": [{
+#     "parts":[{"text": "Explain how AI works"}]
+#     }]
+#    }'
+
+# --- UI Automation Settings (Used if AI_PROVIDER='ui') ---
+# Find coordinates using tools like `python -m pyautogui -c "pyautogui.displayMousePosition()"` in a terminal
+# Coordinates for the primary interaction point (e.g., chat input field)
+UI_TARGET_X: 1000 # CHANGE THIS
+UI_TARGET_Y: 950  # CHANGE THIS
+# Coordinates for selecting/copying the AI response area (e.g., click above input to select chat history)
+UI_RESPONSE_X: 1000 # CHANGE THIS (Often same as target X)
+UI_RESPONSE_Y: 800  # CHANGE THIS (Likely above target Y)
+
+# Speed of simulated typing (seconds between keypresses). Smaller is faster.
+TYPE_INTERVAL: 0.03
+# Delay (seconds) after clicks or before typing, allowing UI to react.
+TYPING_DELAY_SECONDS: 0.3
+# How long Taskmaster waits after sending a prompt via UI before attempting to copy the response. Adjust based on typical AI response times.
+UI_RESPONSE_WAIT_SECONDS: 45
+
+# --- Idle Monitor Settings (Used if RUN_IDLE_MONITOR=true, typically with AI_PROVIDER='ui') ---
+# Set to true to run the idle monitor (either standalone or threaded within Taskmaster if AI_PROVIDER='ui')
+RUN_IDLE_MONITOR: false
+# Delay (seconds) before the idle monitor starts checking after script launch. Allows time for setup/window focus.
+STARTUP_DELAY_SECONDS: 5
+# How often (seconds) the monitor takes screenshots for comparison.
+SCREENSHOT_INTERVAL_SECONDS: 5
+# Number of screenshots to keep in the comparison buffer (minimum 2). Compares oldest/newest/middle.
+COMPARISON_INTERVAL_COUNT: 3
+# Base seconds of screen inactivity (no significant change) before triggering the keep-alive action.
+BASE_IDLE_THRESHOLD_SECONDS: 180 # 3 minutes
+# Seconds to add to the idle threshold each time an action is performed successfully without subsequent screen changes during the post-action wait. Resets on detected change.
+BACKOFF_INCREMENT_SECONDS: 60 # Add 1 minute each time
+# Sensitivity for image comparison (RMSE percentage difference). Lower values detect smaller changes. Fine-tune based on testing. 1.0-5.0 is a common range.
+CHANGE_THRESHOLD: 2.5
+# Command/text to type as the keep-alive action when idle is detected.
+IDLE_ACTION_COMMAND: "dd"
+# Number of times to press Enter after typing the keep-alive command.
+IDLE_ENTER_PRESSES: 2
+# How long (seconds) to pause *after* performing the idle action before checking for inactivity again. This prevents immediate re-triggering and allows checking if the action itself caused screen changes (for backoff).
+POST_ACTION_WAIT_SECONDS: 20
+
+# --- OCR Settings for Idle Monitor (Used if ENABLE_OCR_CHECK=true and RUN_IDLE_MONITOR=true) ---
+# Whether the idle monitor should periodically check a specific screen region for 'generating...' text via OCR.
+# Requires Tesseract OCR engine installed and `pytesseract` python library (`pip install pytesseract`).
+ENABLE_OCR_CHECK: true
+# Region to check for "generating" text, relative to UI_TARGET_X, UI_TARGET_Y (defined above)
+OCR_CHECK_REGION_LEFT_OFFSET: -200 # Pixels left from UI_TARGET_X
+OCR_CHECK_REGION_TOP_OFFSET: -60   # Pixels up from UI_TARGET_Y (adjust to capture status messages)
+OCR_CHECK_REGION_WIDTH: 400        # Width of the OCR check region in pixels
+OCR_CHECK_REGION_HEIGHT: 40        # Height of the OCR check region in pixels
+# Language for Tesseract OCR (e.g., 'eng', 'eng+fra'). Use 'tesseract --list-langs' in terminal to see available languages.
+OCR_LANG: "eng"
+# How long (seconds) to wait before re-checking OCR if 'generating' text *is* found.
+OCR_RETRY_DELAY_SECONDS: 10
+
+# --- General Settings ---
+# Enable Text-to-Speech feedback using pyttsx3 (pip install pyttsx3). Requires system TTS engine.
+ENABLE_TTS: true
+# If true, simulate actions (file writes, UI clicks, API calls) without performing them. Logs intended actions.
+DRY_RUN: false
+
+# --- Logging ---
+LOG_DIRECTORY: "logs"
+# Log file for the main Taskmaster script
+LOG_FILENAME_TASKMASTER: "taskmaster.log"
+# Separate log file for the Idle Monitor (recommended if run threaded or standalone)
+LOG_FILENAME_IDLEMON: "idle_monitor.log"
+# General log level for handlers if specific levels below aren't set
+LOG_LEVEL: "INFO"
+# Log level for writing to log files (e.g., DEBUG, INFO, WARNING)
+LOG_LEVEL_FILE: "DEBUG"
+# Log level for writing to the console/terminal (e.g., INFO, WARNING, ERROR)
+LOG_LEVEL_CONSOLE: "INFO"
+
+# --- Initial Project Planning (First Run) ---
+# Enable the initial conversational planning phase on the first run in a project directory.
+# Requires google-generativeai library (pip install google-generativeai)
+ENABLE_INITIAL_PLANNING: true
+
+# Filename for the marker file created after planning completes, indicating Taskmaster has been initialized for this project.
+INIT_MARKER_FILENAME: ".taskmaster_initialized"
+# Filename where the finalized project specifications will be saved.
+SPECS_FILENAME: "PROJECT_SPECS.md"
+
+# --- Gemini API Settings (Used for Planning & optionally for Code Gen if AI_PROVIDER='api') ---
+# Model to use specifically for the initial planning and task decomposition phase.
+# Choose a model good at conversation and reasoning (e.g., gemini-1.5-flash-latest, gemini-1.5-pro-latest)
+GEMINI_PLANNING_MODEL: "gemini-1.5-flash-latest"
+# Optional: If using Gemini for code generation (AI_PROVIDER='api'), set AI_MODEL above accordingly.
+# Example: AI_MODEL: "gemini-1.5-pro-latest" # If using Gemini for code gen too
+
+# Safety settings for Gemini planning/decomposition calls (adjust as needed)
+# Refer to Google AI safety settings documentation. Blocking 'medium' or 'high' is common.
+GEMINI_SAFETY_SETTINGS:
+  HARM_CATEGORY_HARASSMENT: "BLOCK_MEDIUM_AND_ABOVE"
+  HARM_CATEGORY_HATE_SPEECH: "BLOCK_MEDIUM_AND_ABOVE"
+  HARM_CATEGORY_SEXUALLY_EXPLICIT: "BLOCK_MEDIUM_AND_ABOVE"
+  HARM_CATEGORY_DANGEROUS_CONTENT: "BLOCK_MEDIUM_AND_ABOVE"
+
+# Temperature for Gemini during planning (might want higher than code-gen for creativity)
+GEMINI_PLANNING_TEMPERATURE: 0.6
+# Max output tokens for planning/decomposition responses
+GEMINI_PLANNING_MAX_TOKENS: 4096
+
+# --- Project Scoping --- NEW SECTION
+CURRENT_PROJECT_NAME: null # Set to a project directory name (e.g., "my_web_app") to scope operations, or null to use root
+
+# --- Placeholder for AI Provider Config ---
+# Example (Needs actual implementation in ai_providers.py)
+# AI_PROVIDER: "openai" # or "anthropic", "google", etc.
+# OPENAI_API_KEY: "YOUR_OPENAI_KEY"
+# ANTHROPIC_API_KEY: "YOUR_ANTHROPIC_KEY"
+# ... other provider specific keys ... 

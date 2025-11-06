@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Management - Accessible Dashboard</title>
+</head>
+<body>
+  <h1>User Management</h1>
+  <h2>Current Users</h2>
+  <table border="1" aria-label="User List">
+    <tr><th>Token</th><th>Role</th><th>Actions</th></tr>
+    {% for u in users %}
+      <tr><td>{{ u.token }}</td><td>{{ u.role }}</td>
+        <td>
+          <form action="/remove-user" method="post" style="display:inline">
+            <input type="hidden" name="token" value="{{ u.token }}">
+            <button type="submit">Remove</button>
+          </form>
+        </td>
+      </tr>
+    {% else %}
+      <tr><td colspan="3">No users found.</td></tr>
+    {% endfor %}
+  </table>
+  <h2>Add User</h2>
+  <form action="/add-user" method="post">
+    <label for="token">Token:</label>
+    <input type="text" name="token" id="token" required>
+    <label for="role">Role:</label>
+    <select name="role" id="role">
+      <option value="admin">admin</option>
+      <option value="readonly">readonly</option>
+    </select>
+    <button type="submit">Add User</button>
+  </form>
+  {% if error %}<div role="alert">{{ error }}</div>{% endif %}
+  <nav>
+    <a href="/">Back to Status</a> |
+    <a href="/logout">Logout</a>
+  </nav>
+</body>
+</html>

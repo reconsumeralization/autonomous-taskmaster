@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  mcp_server:
+    build: .
+    container_name: mcp_server
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./logs:/app/logs
+      - ./tasks:/app/tasks
+      - ./tasks_done:/app/tasks_done
+      - ./config.yaml:/app/config.yaml
+    restart: always 

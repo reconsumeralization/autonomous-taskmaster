@@ -1,0 +1,513 @@
+[
+  {
+    "path": ".pytest_basetemp",
+    "type": "directory",
+    "last_modified": "2025-05-03T02:34:31Z",
+    "status": "unknown",
+    "related_task_ids": [],
+    "children": [
+      {
+        "path": ".pytest_basetemp/test_move_file_creates_dest_di0",
+        "type": "directory",
+        "last_modified": "2025-05-03T02:34:31Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": [
+          {
+            "path": ".pytest_basetemp/test_move_file_creates_dest_di0/new_dest_dir",
+            "type": "directory",
+            "last_modified": "2025-05-03T02:34:31Z",
+            "status": "unknown",
+            "related_task_ids": [],
+            "children": [
+              {
+                "path": ".pytest_basetemp/test_move_file_creates_dest_di0/new_dest_dir/subdir",
+                "type": "directory",
+                "last_modified": "2025-05-03T02:34:31Z",
+                "status": "unknown",
+                "related_task_ids": [],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": ".pytest_basetemp/test_move_file_creates_dest_dicurrent",
+        "type": "directory",
+        "last_modified": "2025-05-03T02:34:31Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": [
+          {
+            "path": ".pytest_basetemp/test_move_file_creates_dest_dicurrent/new_dest_dir",
+            "type": "directory",
+            "last_modified": "2025-05-03T02:34:31Z",
+            "status": "unknown",
+            "related_task_ids": [],
+            "children": [
+              {
+                "path": ".pytest_basetemp/test_move_file_creates_dest_dicurrent/new_dest_dir/subdir",
+                "type": "directory",
+                "last_modified": "2025-05-03T02:34:31Z",
+                "status": "unknown",
+                "related_task_ids": [],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": ".pytest_basetemp/test_move_file_dest_is_existin0",
+        "type": "directory",
+        "last_modified": "2025-05-03T02:34:31Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": [
+          {
+            "path": ".pytest_basetemp/test_move_file_dest_is_existin0/existing_file_as_dest.txt",
+            "type": "file",
+            "last_modified": "2025-05-03T02:34:31Z",
+            "status": "unknown",
+            "related_task_ids": []
+          }
+        ]
+      },
+      {
+        "path": ".pytest_basetemp/test_move_file_dest_is_existincurrent",
+        "type": "directory",
+        "last_modified": "2025-05-03T02:34:31Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": [
+          {
+            "path": ".pytest_basetemp/test_move_file_dest_is_existincurrent/existing_file_as_dest.txt",
+            "type": "file",
+            "last_modified": "2025-05-03T02:34:31Z",
+            "status": "unknown",
+            "related_task_ids": []
+          }
+        ]
+      },
+      {
+        "path": ".pytest_basetemp/test_move_file_overwrites_exis0",
+        "type": "directory",
+        "last_modified": "2025-05-03T02:34:31Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": [
+          {
+            "path": ".pytest_basetemp/test_move_file_overwrites_exis0/dest_overwrite.txt",
+            "type": "file",
+            "last_modified": "2025-05-03T02:34:31Z",
+            "status": "unknown",
+            "related_task_ids": []
+          }
+        ]
+      },
+      {
+        "path": ".pytest_basetemp/test_move_file_overwrites_exiscurrent",
+        "type": "directory",
+        "last_modified": "2025-05-03T02:34:31Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": [
+          {
+            "path": ".pytest_basetemp/test_move_file_overwrites_exiscurrent/dest_overwrite.txt",
+            "type": "file",
+            "last_modified": "2025-05-03T02:34:31Z",
+            "status": "unknown",
+            "related_task_ids": []
+          }
+        ]
+      },
+      {
+        "path": ".pytest_basetemp/test_move_file_source_not_foun0",
+        "type": "directory",
+        "last_modified": "2025-05-03T02:34:31Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": []
+      },
+      {
+        "path": ".pytest_basetemp/test_move_file_source_not_founcurrent",
+        "type": "directory",
+        "last_modified": "2025-05-03T02:34:31Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": []
+      },
+      {
+        "path": ".pytest_basetemp/test_move_file_success0",
+        "type": "directory",
+        "last_modified": "2025-05-03T02:34:31Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": [
+          {
+            "path": ".pytest_basetemp/test_move_file_success0/destination.txt",
+            "type": "file",
+            "last_modified": "2025-05-03T02:34:31Z",
+            "status": "unknown",
+            "related_task_ids": []
+          }
+        ]
+      },
+      {
+        "path": ".pytest_basetemp/test_move_file_successcurrent",
+        "type": "directory",
+        "last_modified": "2025-05-03T02:34:31Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": [
+          {
+            "path": ".pytest_basetemp/test_move_file_successcurrent/destination.txt",
+            "type": "file",
+            "last_modified": "2025-05-03T02:34:31Z",
+            "status": "unknown",
+            "related_task_ids": []
+          }
+        ]
+      },
+      {
+        "path": ".pytest_basetemp/test_move_file_to_existing_dir0",
+        "type": "directory",
+        "last_modified": "2025-05-03T02:34:31Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": [
+          {
+            "path": ".pytest_basetemp/test_move_file_to_existing_dir0/target_dir",
+            "type": "directory",
+            "last_modified": "2025-05-03T02:34:31Z",
+            "status": "unknown",
+            "related_task_ids": [],
+            "children": [
+              {
+                "path": ".pytest_basetemp/test_move_file_to_existing_dir0/target_dir/move_me.dat",
+                "type": "file",
+                "last_modified": "2025-05-03T02:34:31Z",
+                "status": "unknown",
+                "related_task_ids": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": ".pytest_basetemp/test_move_file_to_existing_dircurrent",
+        "type": "directory",
+        "last_modified": "2025-05-03T02:34:31Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": [
+          {
+            "path": ".pytest_basetemp/test_move_file_to_existing_dircurrent/target_dir",
+            "type": "directory",
+            "last_modified": "2025-05-03T02:34:31Z",
+            "status": "unknown",
+            "related_task_ids": [],
+            "children": [
+              {
+                "path": ".pytest_basetemp/test_move_file_to_existing_dircurrent/target_dir/move_me.dat",
+                "type": "file",
+                "last_modified": "2025-05-03T02:34:31Z",
+                "status": "unknown",
+                "related_task_ids": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "src",
+    "type": "directory",
+    "last_modified": "2025-05-03T04:07:52Z",
+    "status": "unknown",
+    "related_task_ids": [],
+    "children": [
+      {
+        "path": "src/templates",
+        "type": "directory",
+        "last_modified": "2025-05-02T16:19:32Z",
+        "status": "unknown",
+        "related_task_ids": [],
+        "children": [
+          {
+            "path": "src/templates/alerts.html",
+            "type": "file",
+            "last_modified": "2025-05-02T20:04:42Z",
+            "status": "unknown",
+            "related_task_ids": []
+          },
+          {
+            "path": "src/templates/history.html",
+            "type": "file",
+            "last_modified": "2025-05-02T20:04:42Z",
+            "status": "unknown",
+            "related_task_ids": []
+          },
+          {
+            "path": "src/templates/home.html",
+            "type": "file",
+            "last_modified": "2025-05-02T20:04:42Z",
+            "status": "unknown",
+            "related_task_ids": []
+          },
+          {
+            "path": "src/templates/login.html",
+            "type": "file",
+            "last_modified": "2025-05-02T20:04:42Z",
+            "status": "unknown",
+            "related_task_ids": []
+          },
+          {
+            "path": "src/templates/users.html",
+            "type": "file",
+            "last_modified": "2025-05-02T20:04:42Z",
+            "status": "unknown",
+            "related_task_ids": []
+          }
+        ]
+      },
+      {
+        "path": "src/__init__.py",
+        "type": "file",
+        "last_modified": "2025-05-02T16:20:17Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/accessibility_audit.py",
+        "type": "file",
+        "last_modified": "2025-05-02T20:13:13Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/adder.py",
+        "type": "file",
+        "last_modified": "2025-05-03T00:52:26Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/ai_providers.py",
+        "type": "file",
+        "last_modified": "2025-05-03T03:56:26Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/backup_restore.py",
+        "type": "file",
+        "last_modified": "2025-05-03T03:56:26Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/core_logic.py",
+        "type": "file",
+        "last_modified": "2025-05-03T03:56:26Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/dashboard_server.py",
+        "type": "file",
+        "last_modified": "2025-05-03T03:56:26Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/email_task_intake.py",
+        "type": "file",
+        "last_modified": "2025-05-02T15:51:47Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/image_generator.py",
+        "type": "file",
+        "last_modified": "2025-05-03T00:57:46Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/mcp_server.py",
+        "type": "file",
+        "last_modified": "2025-05-03T05:12:44Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/remote_control_server.py",
+        "type": "file",
+        "last_modified": "2025-05-02T15:59:03Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/security_audit.py",
+        "type": "file",
+        "last_modified": "2025-05-03T03:56:26Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/status_window.py",
+        "type": "file",
+        "last_modified": "2025-05-03T03:56:26Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/ui_automation.py",
+        "type": "file",
+        "last_modified": "2025-05-03T02:19:16Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/utils.py",
+        "type": "file",
+        "last_modified": "2025-05-03T04:31:57Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/voice_command.py",
+        "type": "file",
+        "last_modified": "2025-05-03T03:56:26Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "src/watchdog.py",
+        "type": "file",
+        "last_modified": "2025-05-02T15:52:07Z",
+        "status": "unknown",
+        "related_task_ids": []
+      }
+    ]
+  },
+  {
+    "path": "tasks",
+    "type": "directory",
+    "last_modified": "2025-05-03T01:44:46Z",
+    "status": "unknown",
+    "related_task_ids": [],
+    "children": [
+      {
+        "path": "tasks/taskmaster_todos.json",
+        "type": "file",
+        "last_modified": "2025-05-02T21:08:37Z",
+        "status": "unknown",
+        "related_task_ids": []
+      }
+    ]
+  },
+  {
+    "path": "tests",
+    "type": "directory",
+    "last_modified": "2025-05-03T04:07:52Z",
+    "status": "unknown",
+    "related_task_ids": [],
+    "children": [
+      {
+        "path": "tests/__init__.py",
+        "type": "file",
+        "last_modified": "2025-05-03T02:19:31Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "tests/conftest.py",
+        "type": "file",
+        "last_modified": "2025-05-02T21:36:43Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "tests/test_adder.py",
+        "type": "file",
+        "last_modified": "2025-05-03T01:16:12Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "tests/test_ai_providers.py",
+        "type": "file",
+        "last_modified": "2025-05-03T04:07:03Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "tests/test_ui_automation.py",
+        "type": "file",
+        "last_modified": "2025-05-03T04:08:25Z",
+        "status": "unknown",
+        "related_task_ids": []
+      },
+      {
+        "path": "tests/test_utils.py",
+        "type": "file",
+        "last_modified": "2025-05-03T04:06:51Z",
+        "status": "unknown",
+        "related_task_ids": []
+      }
+    ]
+  },
+  {
+    "path": "API_README.md",
+    "type": "file",
+    "last_modified": "2025-05-02T22:38:15Z",
+    "status": "unknown",
+    "related_task_ids": []
+  },
+  {
+    "path": "Dockerfile",
+    "type": "file",
+    "last_modified": "2025-05-03T00:07:52Z",
+    "status": "unknown",
+    "related_task_ids": []
+  },
+  {
+    "path": "config.yaml",
+    "type": "file",
+    "last_modified": "2025-05-02T15:47:38Z",
+    "status": "unknown",
+    "related_task_ids": []
+  },
+  {
+    "path": "docker-compose.yml",
+    "type": "file",
+    "last_modified": "2025-05-03T00:10:29Z",
+    "status": "unknown",
+    "related_task_ids": []
+  },
+  {
+    "path": "pytest.ini",
+    "type": "file",
+    "last_modified": "2025-05-03T02:20:07Z",
+    "status": "unknown",
+    "related_task_ids": []
+  },
+  {
+    "path": "requirements.txt",
+    "type": "file",
+    "last_modified": "2025-05-03T04:00:50Z",
+    "status": "unknown",
+    "related_task_ids": []
+  },
+  {
+    "path": "taskmaster_todos.json",
+    "type": "file",
+    "last_modified": "2025-05-03T02:52:02Z",
+    "status": "unknown",
+    "related_task_ids": []
+  }
+]

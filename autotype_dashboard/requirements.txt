@@ -1,0 +1,3 @@
+PySide6>=6.5.0 # For the GUI framework
+PyYAML>=6.0 # For reading config if needed later
+Markdown>=3.4 # For rendering documentation 

@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Accessible Dashboard</title>
+</head>
+<body>
+  <h1>Login</h1>
+  <form action="/login" method="post">
+    <label for="token">Access Token:</label>
+    <input type="password" name="token" id="token" required aria-label="Access Token">
+    <button type="submit">Login</button>
+  </form>
+  {% if error %}<div role="alert">{{ error }}</div>{% endif %}
+</body>
+</html>

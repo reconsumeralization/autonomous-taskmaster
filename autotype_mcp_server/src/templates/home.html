@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Status - Accessible Dashboard</title>
+  <script>
+    let ws;
+    function connectWS() {
+      ws = new WebSocket("ws://" + window.location.host + "/ws");
+      ws.onmessage = function(event) {
+        const data = JSON.parse(event.data);
+        document.getElementById("status-text").textContent = data.status.status;
+        document.getElementById("cpu-text").textContent = data.status.cpu + "%";
+        document.getElementById("mem-text").textContent = data.status.memory + "%";
+        document.getElementById("disk-text").textContent = data.status.disk + "%";
+        document.getElementById("queue-text").textContent = data.status.queue_length;
+        document.getElementById("queue-size").textContent = data.queue_status.queue_size;
+        document.getElementById("last-command").textContent = JSON.stringify(data.queue_status.last_command);
+        let alerts = data.alerts.map(a => `<li>${a.msg} (${a.ts})</li>`).join("");
+        if (!alerts) alerts = "<li>No alerts.</li>";
+        document.getElementById("alerts-list").innerHTML = alerts;
+      };
+    }
+    window.onload = connectWS;
+  </script>
+</head>
+<body>
+  <h1 id="main-title">System Status</h1>
+  <div role="status" aria-live="polite">
+    <p>Status: <span id="status-text">{{ status["status"] }}</span></p>
+    <p>CPU: <span id="cpu-text">{{ status["cpu"] }}%</span></p>
+    <p>Memory: <span id="mem-text">{{ status["memory"] }}%</span></p>
+    <p>Disk: <span id="disk-text">{{ status["disk"] }}%</span></p>
+    <p>Queue: <span id="queue-text">{{ status["queue_length"] }}</span></p>
+  </div>
+  <h2>Recent Alerts</h2>
+  <ul id="alerts-list">
+    {% for alert in alerts %}
+      <li>{{ alert.msg }} ({{ alert.ts }})</li>
+    {% else %}
+      <li>No alerts.</li>
+    {% endfor %}
+  </ul>
+  {% if user %}
+  <h2>Remote Command</h2>
+  <form action="/send-command" method="post">
+    <label for="cmd">Command:</label>
+    <select name="cmd" id="cmd">
+      {% for value, label in commands %}
+        <option value="{{ value }}">{{ label }}</option>
+      {% endfor %}
+    </select>
+    <label for="args">Args:</label>
+    <input type="text" name="args" id="args" aria-label="Arguments (space separated)">
+    <button type="submit">Send</button>
+  </form>
+  {% if result %}<div role="alert">{{ result }}</div>{% endif %}
+  <h2>Queue Status</h2>
+  <p>Queue Size: <span id="queue-size">{{ queue_status["queue_size"] }}</span></p>
+  <p>Last Command: <span id="last-command">{{ queue_status["last_command"] }}</span></p>
+  <nav>
+    <a href="/alerts">View All Alerts</a> |
+    <a href="/logout">Logout</a>
+  </nav>
+  {% if user and user.role == "admin" %}
+  <nav>
+    <a href="/users">User Management</a>
+  </nav>
+  {% endif %}
+  <a href="/accessibility-report" target="_blank">Accessibility Report</a> |
+  {% else %}
+  <nav>
+    <a href="/alerts">View All Alerts</a> |
+    <a href="/login">Login</a>
+  </nav>
+  {% endif %}
+  <h2>Schedule Recurring Command</h2>
+  <form action="/schedule-job" method="post">
+    <label for="cmd">Command:</label>
+    <select name="cmd" id="cmd">
+      {% for value, label in commands %}
+        <option value="{{ value }}">{{ label }}</option>
+      {% endfor %}
+    </select>
+    <label for="interval">Interval (minutes):</label>
+    <input type="number" name="interval" id="interval" min="1" required>
+    <button type="submit">Schedule</button>
+  </form>
+  <h2>Scheduled Jobs</h2>
+  <table border="1" aria-label="Scheduled Jobs">
+    <tr><th>Command</th><th>Interval (min)</th><th>Actions</th></tr>
+    {% for job in scheduled_jobs %}
+      <tr>
+        <td>{{ job.cmd }}</td>
+        <td>{{ job.interval }}</td>
+        <td>
+          <form action="/remove-job" method="post" style="display:inline">
+            <input type="hidden" name="job_id" value="{{ job.id }}">
+            <button type="submit">Remove</button>
+          </form>
+        </td>
+      </tr>
+    {% else %}
+      <tr><td colspan="3">No scheduled jobs.</td></tr>
+    {% endfor %}
+  </table>
+</body>
+</html>

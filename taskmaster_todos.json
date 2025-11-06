@@ -1,0 +1,18 @@
+[
+  {
+    "task": "Default task: Review setup",
+    "status": "pending"
+  },
+  {
+    "task": "Update project map",
+    "status": "pending"
+  },
+  {
+    "task": "Integrate Shopify MCP server into Next.js app",
+    "status": "pending"
+  },
+  {
+    "task": "Create a new GitHub repository named 'shop' under the user 'reconsumeralization' and set it as the remote for the local project.",
+    "status": "pending"
+  }
+]

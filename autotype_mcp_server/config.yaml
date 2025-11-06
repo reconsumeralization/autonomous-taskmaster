@@ -1,0 +1,28 @@
+# Default configuration for Auto Typer Taskmaster MCP Server
+ENABLE_TTS: true
+LOG_FILE: mcp_server.log
+TODO_PATH: taskmaster_todos.json
+DONE_DIR: tasks_done
+TASKS_DIR: tasks
+AI_MAX_RETRIES: 3
+AI_MAX_TOKENS: 2048
+AI_TEMPERATURE: 0.1
+AI_TIMEOUT: 120
+GROK_API_KEY_ENV: XAI_API_KEY
+GROK_API_URL_ENV: XAI_API_URL
+INITIAL_DELAY: 5
+INPUT_COORDS: null
+HISTORY_COORDS: null
+IMAP_SERVER: imap.example.com
+IMAP_USER: user@example.com
+IMAP_PASSWORD: password
+REMOTE_CONTROL_TOKEN: changeme
+REMOTE_CONTROL_USERS:
+  - token: changeme
+    role: admin
+    allowed_commands: [audit, email-intake, review-tasks, watchdog, watchdog-report]
+  - token: readonlytoken
+    role: readonly
+    allowed_commands: [review-tasks, watchdog-report]
+HEALTH_ALERT_EMAIL: null
+HEALTH_ALERT_WEBHOOK: null 

@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Command History & Audit Log - Accessible Dashboard</title>
+</head>
+<body>
+  <h1>Command History & Audit Log</h1>
+  <h2>Last Command</h2>
+  <table border="1" aria-label="Last Command">
+    <tr><th>Field</th><th>Value</th></tr>
+    {% for k, v in last_command.items() %}
+      <tr><td>{{ k }}</td><td>{{ v }}</td></tr>
+    {% else %}
+      <tr><td colspan="2">No command history found.</td></tr>
+    {% endfor %}
+  </table>
+  <h2>Audit Log (Last 20 Entries)</h2>
+  <pre aria-label="Audit Log">{% for line in audit_log %}{{ line }}{% endfor %}</pre>
+  <nav>
+    <a href="/">Back to Status</a> |
+    <a href="/logout">Logout</a>
+  </nav>
+</body>
+</html>

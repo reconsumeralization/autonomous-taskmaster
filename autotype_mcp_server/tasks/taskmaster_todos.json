@@ -1,0 +1,826 @@
+[
+  {
+    "task": "Implement DD (double blink) detection logic for accessibility input",
+    "status": "pending"
+  },
+  {
+    "task": "Integrate voice command recognition for task confirmation and execution",
+    "status": "pending"
+  },
+  {
+    "task": "Develop status window UI for DD/voice/TTS/listening state",
+    "status": "pending"
+  },
+  {
+    "task": "Add TTS (Text To Speech) feedback for all major actions and errors",
+    "status": "pending"
+  },
+  {
+    "task": "Log all actions and code changes with secret masking",
+    "status": "pending"
+  },
+  {
+    "task": "Implement rollback procedures for failed operations",
+    "status": "pending"
+  },
+  {
+    "task": "Persist session state across restarts (tasks, plans, preferences)",
+    "status": "pending"
+  },
+  {
+    "task": "Write unit tests for DD detection and confirmation logic",
+    "status": "pending"
+  },
+  {
+    "task": "Write integration tests for voice command execution",
+    "status": "pending"
+  },
+  {
+    "task": "Add error handling and reporting for all user input methods",
+    "status": "pending"
+  },
+  {
+    "task": "Implement PowerShell/terminal command execution with admin privileges",
+    "status": "pending"
+  },
+  {
+    "task": "Integrate MCP server endpoints for code generation and deployment",
+    "status": "pending"
+  },
+  {
+    "task": "Develop helper agent for GUI automation tasks",
+    "status": "pending"
+  },
+  {
+    "task": "Create documentation for all accessibility features",
+    "status": "pending"
+  },
+  {
+    "task": "Optimize all outputs for screen readers and alternative input",
+    "status": "pending"
+  },
+  {
+    "task": "Add numbered line outputs to all status and report messages",
+    "status": "pending"
+  },
+  {
+    "task": "Implement exploration heuristic for task selection (optimal and alternative paths)",
+    "status": "pending"
+  },
+  {
+    "task": "Automatically generate and update high-level and decomposed task lists",
+    "status": "pending"
+  },
+  {
+    "task": "Add system stability and data integrity checks before/after major actions",
+    "status": "pending"
+  },
+  {
+    "task": "Proactively suggest improvements to accessibility and workflow",
+    "status": "pending"
+  },
+  {
+    "task": "Implement customizable hotkeys for accessibility actions",
+    "status": "pending"
+  },
+  {
+    "task": "Add visual feedback for DD and voice command detection",
+    "status": "pending"
+  },
+  {
+    "task": "Support multi-language TTS and voice recognition",
+    "status": "pending"
+  },
+  {
+    "task": "Integrate with external accessibility APIs",
+    "status": "pending"
+  },
+  {
+    "task": "Provide real-time task progress updates",
+    "status": "pending"
+  },
+  {
+    "task": "Enable remote control via secure web interface",
+    "status": "pending"
+  },
+  {
+    "task": "Add user profile management for preferences",
+    "status": "pending"
+  },
+  {
+    "task": "Implement granular permission controls for admin actions",
+    "status": "pending"
+  },
+  {
+    "task": "Support custom task templates",
+    "status": "pending"
+  },
+  {
+    "task": "Add analytics dashboard for usage and performance",
+    "status": "pending"
+  },
+  {
+    "task": "Implement auto-save for in-progress tasks",
+    "status": "pending"
+  },
+  {
+    "task": "Add notification system for task completions and errors",
+    "status": "pending"
+  },
+  {
+    "task": "Integrate with calendar for scheduled tasks",
+    "status": "pending"
+  },
+  {
+    "task": "Support importing/exporting task lists",
+    "status": "pending"
+  },
+  {
+    "task": "Add dark mode and high-contrast UI themes",
+    "status": "pending"
+  },
+  {
+    "task": "Implement voice command training and adaptation",
+    "status": "pending"
+  },
+  {
+    "task": "Provide onboarding tutorial for new users",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for alternative input devices (e.g., sip-and-puff)",
+    "status": "pending"
+  },
+  {
+    "task": "Enable task assignment to multiple agents",
+    "status": "pending"
+  },
+  {
+    "task": "Implement task dependencies and prerequisites",
+    "status": "pending"
+  },
+  {
+    "task": "Add undo/redo functionality for task actions",
+    "status": "pending"
+  },
+  {
+    "task": "Support tagging and categorization of tasks",
+    "status": "pending"
+  },
+  {
+    "task": "Integrate with bug tracking systems",
+    "status": "pending"
+  },
+  {
+    "task": "Provide export to PDF/CSV for reports",
+    "status": "pending"
+  },
+  {
+    "task": "Add customizable status window layouts",
+    "status": "pending"
+  },
+  {
+    "task": "Implement session timeout and auto-lock for security",
+    "status": "pending"
+  },
+  {
+    "task": "Support biometric authentication for admin actions",
+    "status": "pending"
+  },
+  {
+    "task": "Add quick search for tasks and commands",
+    "status": "pending"
+  },
+  {
+    "task": "Enable batch editing of tasks",
+    "status": "pending"
+  },
+  {
+    "task": "Implement AI-based task suggestion engine",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for recurring tasks",
+    "status": "pending"
+  },
+  {
+    "task": "Provide detailed audit logs for all actions",
+    "status": "pending"
+  },
+  {
+    "task": "Integrate with cloud storage for backups",
+    "status": "pending"
+  },
+  {
+    "task": "Add customizable notification sounds",
+    "status": "pending"
+  },
+  {
+    "task": "Support offline mode with local caching",
+    "status": "pending"
+  },
+  {
+    "task": "Implement real-time collaboration on tasks",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for markdown in task descriptions",
+    "status": "pending"
+  },
+  {
+    "task": "Enable drag-and-drop task reordering",
+    "status": "pending"
+  },
+  {
+    "task": "Provide API for third-party integrations",
+    "status": "pending"
+  },
+  {
+    "task": "Add system health monitoring dashboard",
+    "status": "pending"
+  },
+  {
+    "task": "Implement customizable accessibility shortcuts",
+    "status": "pending"
+  },
+  {
+    "task": "Support encrypted storage for sensitive data",
+    "status": "pending"
+  },
+  {
+    "task": "Add multi-factor authentication for critical actions",
+    "status": "pending"
+  },
+  {
+    "task": "Provide context-aware help and tooltips",
+    "status": "pending"
+  },
+  {
+    "task": "Enable voice command macros for complex actions",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for real-time translation of commands",
+    "status": "pending"
+  },
+  {
+    "task": "Implement adaptive UI scaling for different devices",
+    "status": "pending"
+  },
+  {
+    "task": "Provide customizable color schemes for UI",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for screen magnification",
+    "status": "pending"
+  },
+  {
+    "task": "Enable task archiving and restoration",
+    "status": "pending"
+  },
+  {
+    "task": "Implement smart error correction for voice input",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for gesture-based input",
+    "status": "pending"
+  },
+  {
+    "task": "Provide detailed user activity reports",
+    "status": "pending"
+  },
+  {
+    "task": "Enable integration with Slack/Teams for notifications",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for custom user scripts",
+    "status": "pending"
+  },
+  {
+    "task": "Implement task version history and rollback",
+    "status": "pending"
+  },
+  {
+    "task": "Provide customizable onboarding flows",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for multiple concurrent sessions",
+    "status": "pending"
+  },
+  {
+    "task": "Enable voice command confirmation prompts",
+    "status": "pending"
+  },
+  {
+    "task": "Implement AI-based error detection and suggestions",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for exporting/importing user settings",
+    "status": "pending"
+  },
+  {
+    "task": "Provide keyboard navigation for all UI elements",
+    "status": "pending"
+  },
+  {
+    "task": "Enable integration with Git for version control",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for real-time code review",
+    "status": "pending"
+  },
+  {
+    "task": "Implement customizable task reminders",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility compliance reports",
+    "status": "pending"
+  },
+  {
+    "task": "Enable voice command chaining for multi-step actions",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for user-defined task priorities",
+    "status": "pending"
+  },
+  {
+    "task": "Implement smart scheduling for task execution",
+    "status": "pending"
+  },
+  {
+    "task": "Provide integration with Jira and Trello",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for custom notification channels",
+    "status": "pending"
+  },
+  {
+    "task": "Enable task cloning and duplication",
+    "status": "pending"
+  },
+  {
+    "task": "Implement real-time conflict resolution for tasks",
+    "status": "pending"
+  },
+  {
+    "task": "Provide customizable export templates",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for voice command history and analytics",
+    "status": "pending"
+  },
+  {
+    "task": "Enable integration with calendar apps (Google, Outlook)",
+    "status": "pending"
+  },
+  {
+    "task": "Implement smart suggestions for task decomposition",
+    "status": "pending"
+  },
+  {
+    "task": "Provide customizable user dashboards",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for multi-user task approval workflows",
+    "status": "pending"
+  },
+  {
+    "task": "Enable integration with email for notifications and commands",
+    "status": "pending"
+  },
+  {
+    "task": "Implement AI-based accessibility improvement suggestions",
+    "status": "pending"
+  },
+  {
+    "task": "Provide support for custom accessibility profiles",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for exporting task analytics",
+    "status": "pending"
+  },
+  {
+    "task": "Enable integration with project management tools",
+    "status": "pending"
+  },
+  {
+    "task": "Implement customizable user roles and permissions",
+    "status": "pending"
+  },
+  {
+    "task": "Provide support for automated task escalation",
+    "status": "pending"
+  },
+  {
+    "task": "Implement real-time accessibility event logging",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for eye-tracking calibration routines",
+    "status": "pending"
+  },
+  {
+    "task": "Enable customizable voice command phrases",
+    "status": "pending"
+  },
+  {
+    "task": "Integrate with system notification center",
+    "status": "pending"
+  },
+  {
+    "task": "Provide export/import for accessibility profiles",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for hardware button triggers",
+    "status": "pending"
+  },
+  {
+    "task": "Implement session analytics for accessibility usage",
+    "status": "pending"
+  },
+  {
+    "task": "Enable remote diagnostics for support",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for custom accessibility macros",
+    "status": "pending"
+  },
+  {
+    "task": "Provide real-time error notifications via TTS",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature usage heatmaps",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for user feedback collection",
+    "status": "pending"
+  },
+  {
+    "task": "Enable integration with accessibility hardware vendors",
+    "status": "pending"
+  },
+  {
+    "task": "Provide customizable onboarding accessibility checklists",
+    "status": "pending"
+  },
+  {
+    "task": "Implement auto-detection of accessibility needs",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility compliance certifications",
+    "status": "pending"
+  },
+  {
+    "task": "Enable real-time collaboration with accessibility consultants",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature usage statistics dashboard",
+    "status": "pending"
+  },
+  {
+    "task": "Implement customizable accessibility alerts",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature toggles",
+    "status": "pending"
+  },
+  {
+    "task": "Enable integration with accessibility research databases",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature update notifications",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature request system",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature beta testing",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature rollback",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature changelogs",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature usage reminders",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature scheduling",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature prioritization",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature dependency management",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature versioning",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature localization",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature translation",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature documentation export",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature import from external sources",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature archiving",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature restoration",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature audit trails",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature compliance monitoring",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature escalation",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature deprecation warnings",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature migration tools",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature rollback points",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature branching",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature merging",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature conflict resolution",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature approval workflows",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature review requests",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature review comments",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature review notifications",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature review analytics",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature review export",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature review import",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature review archiving",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature review restoration",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature review versioning",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature review translation",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature review localization",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature review documentation export",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature review import from external sources",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature review scheduling",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature review prioritization",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature review dependency management",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature review compliance monitoring",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature review escalation",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature review deprecation warnings",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature review migration tools",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature review rollback points",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature review branching",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature review merging",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature review conflict resolution",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature review approval workflows",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature review comments export",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature review comments import",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature review comments archiving",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature review comments restoration",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature review comments versioning",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature review comments translation",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature review comments localization",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature review comments documentation export",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature review comments import from external sources",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature review comments scheduling",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature review comments prioritization",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature review comments dependency management",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature review comments compliance monitoring",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature review comments escalation",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature review comments deprecation warnings",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature review comments migration tools",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature review comments rollback points",
+    "status": "pending"
+  },
+  {
+    "task": "Provide accessibility feature review comments branching",
+    "status": "pending"
+  },
+  {
+    "task": "Implement accessibility feature review comments merging",
+    "status": "pending"
+  },
+  {
+    "task": "Add support for accessibility feature review comments conflict resolution",
+    "status": "pending"
+  },
+  {
+    "task": "Enable accessibility feature review comments approval workflows",
+    "status": "pending"
+  },
+  {
+    "task": "Refactor src/core_logic.py for better modularity",
+    "status": "pending"
+  },
+  {
+    "task": "add comprehensive docstrings.",
+    "status": "pending"
+  },
+  {
+    "task": "Improve project documentation: Enhance README.md with setup",
+    "status": "pending"
+  },
+  {
+    "task": "usage",
+    "status": "pending"
+  },
+  {
+    "task": "architecture details.",
+    "status": "pending"
+  },
+  {
+    "task": "Research",
+    "status": "pending"
+  },
+  {
+    "task": "evaluate alternative Python TTS libraries for potential improved accessibility or performance.",
+    "status": "pending"
+  }
+]

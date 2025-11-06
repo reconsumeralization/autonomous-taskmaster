@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alerts - Accessible Dashboard</title>
+  <script>
+    let ws;
+    function connectWS() {
+      ws = new WebSocket("ws://" + window.location.host + "/ws");
+      ws.onmessage = function(event) {
+        const data = JSON.parse(event.data);
+        let alerts = data.alerts.map(a => `<li>${a.msg} (${a.ts})</li>`).join("");
+        if (!alerts) alerts = "<li>No alerts.</li>";
+        document.getElementById("alerts-list").innerHTML = alerts;
+      };
+    }
+    window.onload = connectWS;
+  </script>
+</head>
+<body>
+  <h1 id="alerts-title">Recent Alerts</h1>
+  <ul id="alerts-list">
+    {% for alert in alerts %}
+      <li>{{ alert.msg }} ({{ alert.ts }})</li>
+    {% else %}
+      <li>No alerts.</li>
+    {% endfor %}
+  </ul>
+  <nav>
+    <a href="/">Back to Status</a>
+  </nav>
+</body>
+</html>

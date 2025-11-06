@@ -1,0 +1,45 @@
+# Requirements
+mcp-sdk>=1.7.1.dev9
+
+# Core requirements for autotype_mcp_server
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.1
+PyYAML>=6.0 # For config loading
+python-dotenv>=1.0.0 # For .env file support
+loguru>=0.7.2 # For logging in server
+requests>=2.31.0
+# For UI automation / idle detection
+pyautogui>=0.9.54
+Pillow>=10.2.0
+numpy>=1.26.4 # Often needed by Pillow/cv2
+pygetwindow>=0.0.9 # To find and minimize the dashboard window
+
+# Optional for OCR in idle script
+# pytesseract>=0.3.10 
+
+# Optional for desktop notifications in utils
+# win10toast>=0.9 # Or appropriate library for other OS
+
+# Optional for TTS
+# pyttsx3>=2.90
+
+# Testing requirements
+pytest>=8.0.0
+
+# Dashboard requirements (Separate venv recommended)
+# PySide6>=6.5.0
+# Markdown>=3.4
+
+# Dependencies from server utils (ensure they are covered)
+psutil>=5.9.8
+SpeechRecognition>=3.10.4
+PyAudio>=0.2.14 # Often needed by SpeechRecognition
+
+# Core dependencies for taskmaster and potentially shared utils
+pyyaml
+python-dotenv
+pyttsx3
+pyperclip
+
+# Add other core dependencies here as needed
+markdown # Added for parsing .md task files 
